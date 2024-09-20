@@ -1,0 +1,55 @@
+@keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+
+  @keyframes moveDown {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(4px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes Upwards {
+    0% {
+      transform: translateY(5px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes gradiantAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(173, 210, 247), 
+        rgb(196, 169, 221), 
+        rgb(255, 149, 149), 
+        rgb(255, 198, 139)
+    );
+    border-radius: 10px; 
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundLine</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/SubStyle/Keyframes.css">
+    <link rel="stylesheet" href="/SubStyle/QueueList.css">
+    <link rel="stylesheet" href="/SubStyle/InfiniteScroll.css">
+    <link rel="stylesheet" href="/SubStyle/BentoGrid.css">
+ 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div id="circle">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+    </div>
+
+    <section id="Search">
+        <header class="header">
+            <a href="#" class="logo">SoundLine</a>
+            <nav class="navbar">
+                <a href="#Search" class="head1">Search</a>
+                <a href="#Play" class="head2">Play</a>
+                <a href="#Queue" class="head3" id="queue-button">Queue</a>
+            </nav>
+        </header>
+
+  
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search for songs">
+            <span id="clear-search" class="clear-search"><img src="../img/delete.png" alt=""></span>
+        </div>
+
+        <div class="Content-Wrap">
+            <div id="search-results"></div>
+        </div>
+
+        <div class="Container">
+            <div class="item-wrap">
+                <h1>Tailor Your Tunes with <span class="Hero-title">Soundline</span></h1>
+                <p class="parag1">Elevate your auditory experience with our premium music player.</p>
+                <p class="parag2">Immerse yourself in a vast library of timeless classics and contemporary hits,
+                    tailored to your unique preferences. Discover new artists, curate personalized playlists,
+                    and enjoy unparalleled sound quality that enhances every moment of your day.
+                    Let our music player be the perfect accompaniment to your life's journey.</p>
+            </div> 
+        </div>
+
+        <div class="Infinite-Scroll">
+            <div class="Icon item1"><i class="fa-brands fa-spotify"></i></div>
+            <div class="Icon item2"><i class="fa-brands fa-font-awesome"></i></div>
+            <div class="Icon item3"><i class="fa-brands fa-google"></i></div>
+            <div class="Icon item4"><i class="fa-brands fa-youtube"></i></div>
+            <div class="Icon item5"><i class="fa-brands fa-html5"></i></div>
+            <div class="Icon item6"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="Icon item7"><i class="fa-brands fa-js"></i></div>
+            <div class="Icon item8"><i class="fa-brands fa-codepen"></i></div>
+            <div class="Icon item9"><i class="fa-brands fa-figma"></i></i></div>
+            <div class="Icon item10"><i class="fa-brands fa-github"></i></i></div>
+        </div>
+    </section>
+
+    <section id="Play">
+        <div class="Container-wrap">
+            <div class="Hero-title title2">
+                <h2>Queue your Soundtrack</h2>
+
+                <div class="item-wrap wrap2"> 
+                    <p class="parag1">Queue up and play your music in your preferred order</p>
+                    <p class="parag2">Let the rhythm guide your journey and the melodies elevate your mood as you curate your own
+                        musical experience, one track at a time.</p>
+                </div>
+            </div>
+
+            <div class="BentoGrid">
+                <div class="item large">
+                    <div class="Container Box"></div>
+                </div>
+
+                <div class="item medium">
+                    <div class="progress-bar">
+                        <input type="range" id="progress-bar" min="0" max="100" step="1" value="0" class="bar">
+                            <div class="play-btn">
+                                <span class="material-symbols-outlined" id="stop">stop</span>
+                                <span class="material-symbols-outlined" id="play">play_circle</span>
+                                <span class="material-symbols-outlined" id="skip-next">skip_next</span>
+                            </div>
+                       
+                    </div>
+                </div>
+
+                <div class="item small">
+                    <ul id="queue"></ul>
+                </div>
+
+                <div class="item small">
+                    <h3 class="playing">Song Tiitle</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Recommendations">
+
+        <div class="side-panel" id="side-panel">
+            <div class="side-panel-content">
+                <span class="material-symbols-outlined" id="close-side-panel">close</span>
+                <h4 class="lvl">Queue List</h4>
+                <div class="wrap-box">
+                    <ul class="queue-text" id="queue-list"></ul>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="/SubScript/AnimateCursor.js"></script>
+    <script src="/SubScript/Panel.js"></script>
+    <script src="/SubScript/QueueList.js"></script>
+</body>
+</html>
